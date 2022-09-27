@@ -15,7 +15,7 @@ We attached a small dataset in dataset/regression/sample.<br>
 
 One can setup the environment using anaconda, the typical install time is less than an hour, but it depends on the internet speed.<br>
 the command is:<br>
-conda env create -f environment.yml<br>
+conda env create -f main/environment.yml<br>
 then activate the environment through command:<br>
 conda activate tfq<br>
 
