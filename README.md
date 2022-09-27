@@ -1,4 +1,4 @@
-This repository provides a simple implementation of the Atomic Fragment Approximation (AFA) that provides the structure-property relationship through the "adding" of fragments. AFA first map the structure summation into the TN states summation. These TN states contain the necessary information for target properties, thus the TN states summation results in the property summation.
+This repository provides a simple implementation of the Atomic Fragment Approximation (AFA) that provides the structure-property relationship through the "adding" of fragments. AFA first map the structure summation into the TN states summation. These TN states contain the necessary information for target properties, thus the TN states summation results in the property summation. Such adding example can be found in "property_adding.ipynb" under the folder "main/".
 
 ![image](https://user-images.githubusercontent.com/58459755/192413071-38379ad0-3117-4b70-9720-61e8dd30c3a4.png)
 
