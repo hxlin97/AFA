@@ -2,66 +2,42 @@
 
 1. System Requirements:
 
-
-System: ubuntu version: 18.04
-
+System: ubuntu version: 18.04 <br>
 Software: python version: 3.7.11
-
 We run these codes using Nvidia Titan Xp
-
 We attached a small dataset in dataset/regression/sample.
-
 
 2. Installation guide
 
 One can setup the environment using anaconda, the typical install time is less than an hour, but it depends on the internet speed.
-
 the command is:
-
 conda env create -f environment.yml
-
 then activate the environment through command:
-
 conda activate tfq
 
 
 3. Demo
-
+4. 
 One may run our code using the script train.py inside the folder main.
-
 An example command is: 
-
 python train.py regression sample 0 10 6 6 32 32 1e-4 0.99 10 2000 test_log
-
 corresponds to regression on dataset "sample", 
-
 with 0 modification, 
-
 10 bond dimension, 
-
 the hyperparameter for encoding MPS and MPO are 6, 
-
 the batch size is 32 for test and train
-
 the learning rate is 1e-4
-
 the decay interval is 10
-
 the number of epoches is 2000
-
 the output is saved in test_log.txt in the folder output.
-
 
 Notice that the output entirely depends on the TN contraction results, which comes from the matrix production. If the TN contraction results for each parts are known, they can be directly added without abundant calculations.
 
-Like the molecule C formed by A and B 
-
+Like for a molecule C formed by A and B 
 TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A and TN_contraction results of B.
-
 The expected output is:
 
 """
-
 Epoch	Time(sec)	Loss_train	MAE_dev	MAE_test
 1	24.78169422596693	51343368.59460449	57.13965818951954	59.022087139204984
 2	48.64706811727956	5353620.6083984375	56.775621237657944	58.648000369387645
