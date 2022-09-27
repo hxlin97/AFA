@@ -144,7 +144,7 @@ class Tester(object):
                                                data_batch, train=False)
             SAE += sum(np.abs(predicted_values-correct_values))
         MAE = SAE / N  # mean absolute error.
-        return MAE/batch_test
+        return MAE
 
     def save_result(self, result, filename):
         with open(filename, 'a') as f:
