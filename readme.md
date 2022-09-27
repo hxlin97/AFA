@@ -21,7 +21,7 @@ python train.py regression sample 0 10 6 6 32 32 1e-4 0.99 10 2000 test_log
 corresponds to regression on dataset "sample", 
 with 0 modification, 
 10 bond dimension, 
-the hyperparameter for encoding MPS and MPO are 6,
+the hyperparameter for encoding MPS and MPO are 6, 
 the batch size is 32 for test and train
 the learning rate is 1e-4
 the decay interval is 10
@@ -32,7 +32,7 @@ Notice that the output entirely depends on the TN contraction results, which com
 Like the molecule C formed by A and B 
 TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A and TN_contraction results of B.
 
-The expected output is:\\
+The expected output is:
 """
 Epoch	Time(sec)	Loss_train	MAE_dev	MAE_test
 1	24.78169422596693	51343368.59460449	57.13965818951954	59.022087139204984
