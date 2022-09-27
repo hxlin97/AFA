@@ -1,3 +1,5 @@
+This repository provides a simple implementation of the Atomic Fragment Approximation (AFA) that provides the structure-property relationship through the "adding" of fragments.
+
 ![image](https://user-images.githubusercontent.com/58459755/192413071-38379ad0-3117-4b70-9720-61e8dd30c3a4.png)
 
 1. System Requirements:
