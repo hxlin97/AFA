@@ -128,7 +128,7 @@ class Trainer(object):
             loss.backward()
             self.optimizer.step()
             loss_total += loss.item()
-        return loss_total
+        return loss_total/batch_train
 
 
 class Tester(object):
@@ -144,7 +144,7 @@ class Tester(object):
                                                data_batch, train=False)
             SAE += sum(np.abs(predicted_values-correct_values))
         MAE = SAE / N  # mean absolute error.
-        return MAE
+        return MAE/batch_test
 
     def save_result(self, result, filename):
         with open(filename, 'a') as f:
