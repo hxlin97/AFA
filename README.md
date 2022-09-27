@@ -35,12 +35,6 @@ the decay interval is 10<br>
 the number of epoches is 2000<br>
 the output is saved in test_log.txt in the folder output.<br>
 
-Notice that the output entirely depends on the TN contraction results, which comes from the matrix production. If the TN contraction results for each parts are known, they can be directly added without abundant calculations.<br>
-
-Like for a molecule C formed by A and B <br>
-TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A and TN_contraction results of B.<br>
-One can refer to "property_adding.ipynb" for an example. 
-
 The expected output is:<br>
 
 """<br>
@@ -67,6 +61,12 @@ Epoch	Time(sec)	Loss_train	MAE_dev	MAE_test<br>
 20	510.3121106121689	2146.0036296844482	2.012883636267944	2.017228299443516<br>
 """<br>
 The expected run time is listed on the output.<br>
+
+Notice that the output entirely depends on the TN contraction results, which comes from the matrix production. If the TN contraction results for each parts are known, they can be directly added without abundant calculations.<br>
+
+Like for a molecule C formed by A and B <br>
+TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A, TN_contraction results of B, and a modification term that is determined by the connection part between A and B.<br>
+One can refer to "property_adding.ipynb" inside the folder "main/" for an example. 
 
 4. Instructions for use
 
