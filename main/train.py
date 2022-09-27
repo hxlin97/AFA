@@ -82,7 +82,7 @@ class AFA(nn.Module):
         MPSs = self.update_MPS(adjacencies, MPSs)
         MPSs = F.normalize(MPSs, 2, 1)
         MPOs = F.normalize(MPOs, 2, 1)
-
+        MPOs = torch.einsum("abc,ab->abc", MPOs, adjacencies)
         tmp = torch.einsum("ac,abc->cb", MPSs, MPOs)
         # tmp = torch.einsum("ab,ac->bc", MPSs, adjacencies)
         info_sets = torch.split(tmp, molecular_sizes,dim=1)
@@ -191,8 +191,6 @@ if __name__ == "__main__":
     print('-'*100)
 
     file_result = '../output/result--' + setting + '.txt'
-    if task == 'classification':
-        result = 'Epoch\tTime(sec)\tLoss_train\tAUC_dev\tAUC_test'
     if task == 'regression':
         result = 'Epoch\tTime(sec)\tLoss_train\tMAE_dev\tMAE_test'
 
