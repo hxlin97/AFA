@@ -32,7 +32,7 @@ Notice that the output entirely depends on the TN contraction results, which com
 Like the molecule C formed by A and B 
 TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A and TN_contraction results of B.
 
-The expected output is:\n
+The expected output is:\\
 """
 Epoch	Time(sec)	Loss_train	MAE_dev	MAE_test
 1	24.78169422596693	51343368.59460449	57.13965818951954	59.022087139204984
