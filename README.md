@@ -39,6 +39,8 @@ Notice that the output entirely depends on the TN contraction results, which com
 
 Like for a molecule C formed by A and B <br>
 TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A and TN_contraction results of B.<br>
+One can refer to "property_adding.ipynb" for an example. 
+
 The expected output is:<br>
 
 """<br>
