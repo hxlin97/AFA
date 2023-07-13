@@ -1,17 +1,18 @@
+# Atomic Fragment Approximation (AFA)
 This repository provides a simple implementation of the Atomic Fragment Approximation (AFA) that provides the structure-property relationship through the "adding" of fragments. AFA first map the structure summation into the TN states summation. These TN states contain the necessary information for target properties, thus the TN states summation results in the property summation. Such adding example can be found in "property_adding.ipynb" under the folder "main/".
 
 ![image](https://user-images.githubusercontent.com/58459755/192413071-38379ad0-3117-4b70-9720-61e8dd30c3a4.png)
 
 In the following, we describe the usage of this repository.
 
-1. System Requirements:
+#1. System Requirements:
 
 System: ubuntu version: 18.04 <br>
 Software: python version: 3.7.11<br>
 We run these codes using Nvidia Titan Xp<br>
 We attached a small dataset in dataset/regression/sample.<br>
 
-2. Installation guide
+#2. Installation guide
 
 One can setup the environment using anaconda, the typical install time is less than an hour, but it depends on the internet speed.<br>
 the command is:<br>
@@ -20,7 +21,7 @@ then activate the environment through command:<br>
 conda activate tfq<br>
 
 
-3. Demo
+#3. Demo
 
 One may run our code using the script train.py inside the folder main.<br>
 An example command is: <br>
@@ -68,7 +69,7 @@ Like for a molecule C formed by A and B <br>
 TN_contraction results  of C can be directly obtained by the adding of TN_contraction results of A, TN_contraction results of B, and a modification term that is determined by the connection part between A and B.<br>
 One can refer to "property_adding.ipynb" inside the folder "main/" for an example. 
 
-4. Instructions for use
+#4. Instructions for use
 
 If you want to run AFA on your data:<br>
     1. place the data in folders like dataset/regression/YOURSAMPLEDATA, rename them as data_test.txt and data_train.txt<br>
