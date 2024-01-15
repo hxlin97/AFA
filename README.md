@@ -3,6 +3,8 @@ This repository provides a simple implementation of the Atomic Fragment Approxim
 
 ![image](https://user-images.githubusercontent.com/58459755/192413071-38379ad0-3117-4b70-9720-61e8dd30c3a4.png)
 
+Please remember to cite our work: Lin, H., & Zhu, X. (2023). Atomic fragment approximation from a tensor network. Digital Discovery, 2(6), 1688-1696.
+
 In the following, we describe the usage of this repository.
 
 ## 1. System Requirements:
